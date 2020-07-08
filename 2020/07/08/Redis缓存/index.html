@@ -5,13 +5,17 @@
   
 
   
-  <title>孔文斌的博客</title>
+  <title>Redis缓存 | 孔文斌的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="孔文斌的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1.缓存穿透1.1 概念业务系统访问根本不存在的数据，数据不存在于缓存和数据库中。 1.2 危害大量无效请求打在数据库上，导致数据库崩溃。 1.3 缓存穿透原因 恶意攻击 代码逻辑错误1.4 处理方式 参数校验。 过滤器，在进入缓存前进行id判断，若为数据库中一定不存在的数据则拦截。 对不存在的数据进行缓存，即通过数据库查找为空的数据，可以将过期时间设短一点。2.缓存雪崩2.1 概念大量缓存在短时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Redis缓存">
+<meta property="og:url" content="http://yoursite.com/2020/07/08/Redis%E7%BC%93%E5%AD%98/index.html">
 <meta property="og:site_name" content="孔文斌的博客">
+<meta property="og:description" content="1.缓存穿透1.1 概念业务系统访问根本不存在的数据，数据不存在于缓存和数据库中。 1.2 危害大量无效请求打在数据库上，导致数据库崩溃。 1.3 缓存穿透原因 恶意攻击 代码逻辑错误1.4 处理方式 参数校验。 过滤器，在进入缓存前进行id判断，若为数据库中一定不存在的数据则拦截。 对不存在的数据进行缓存，即通过数据库查找为空的数据，可以将过期时间设短一点。2.缓存雪崩2.1 概念大量缓存在短时">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-08T08:36:21.750Z">
+<meta property="article:modified_time" content="2020-07-08T09:03:24.861Z">
 <meta property="article:author" content="孔文斌">
 <meta name="twitter:card" content="summary">
   
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Redis缓存" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Redis缓存" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/07/08/Redis%E7%BC%93%E5%AD%98/" class="article-date">
   <time datetime="2020-07-08T08:36:21.750Z" itemprop="datePublished">2020-07-08</time>
@@ -77,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/08/Redis%E7%BC%93%E5%AD%98/">Redis缓存</a>
+    <h1 class="article-title" itemprop="name">
+      Redis缓存
     </h1>
   
 
@@ -106,140 +108,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Java并发：Future原理" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/08/Java%E5%B9%B6%E5%8F%91%EF%BC%9AFuture%E5%8E%9F%E7%90%86/" class="article-date">
-  <time datetime="2020-07-08T06:54:43.727Z" itemprop="datePublished">2020-07-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/08/Java%E5%B9%B6%E5%8F%91%EF%BC%9AFuture%E5%8E%9F%E7%90%86/">Java并发：Future原理</a>
-    </h1>
+    <a href="/2020/07/08/Java%E5%B9%B6%E5%8F%91%EF%BC%9AFuture%E5%8E%9F%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java并发：Future原理</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Future：Java接口"><a href="#Future：Java接口" class="headerlink" title="Future：Java接口"></a>Future：Java接口</h2><h3 id="接口方法："><a href="#接口方法：" class="headerlink" title="接口方法："></a>接口方法：</h3><ul>
-<li>boolean cancel(boolean mayInterruptIfRunning);</li>
-<li>boolean isCancelled();</li>
-<li>boolean isDone();</li>
-<li>V get() throws InterruptedException, ExecutionException;</li>
-<li>V get(long timeout, TimeUnit unit)<pre><code>throws InterruptedException, ExecutionException, TimeoutException;</code></pre></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/08/Java%E5%B9%B6%E5%8F%91%EF%BC%9AFuture%E5%8E%9F%E7%90%86/" data-id="ckcd4xvxn0001i2krhtt2291k" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-kongwenbin" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/08/kongwenbin/" class="article-date">
-  <time datetime="2020-07-08T06:27:28.258Z" itemprop="datePublished">2020-07-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/08/kongwenbin/">kongwenbin</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>hahahahahah~ yeyeyey</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/08/kongwenbin/" data-id="ckccznvee0001a0kraj14hhs5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/08/hello-world/" class="article-date">
-  <time datetime="2020-07-08T05:08:12.700Z" itemprop="datePublished">2020-07-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/08/hello-world/" data-id="ckccznve50000a0krbhla95b9" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
